@@ -1,1 +1,12 @@
-@include("./banner-slide.html")
+<section class="banner swiper">
+    <div class="banner__wrapper swiper-wrapper">
+        @@include("./banner-slide.html")
+        @@include("./banner-slide.html")
+        @@include("./banner-slide.html")
+    </div>
+    <div class="swiper-pagination banner__pagin"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev banner__prev"></div>
+    <div class="swiper-button-next banner__next"></div>
+</section>

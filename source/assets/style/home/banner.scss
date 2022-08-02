@@ -1,0 +1,54 @@
+.banner {
+    max-width: $maxWidthWindow;
+    margin: 0 auto;
+}
+
+.banner__wrapper {
+}
+.banner
+.swiper-pagination {
+    display: none;
+
+    @include minVal(1024px) {
+        display: flex;
+        justify-content: start;
+        align-items: flex-end;
+        max-width: 960px;
+        height: 20px;
+        bottom: 20%;
+        left: calc((100% - 960px) / 2) ;
+
+    }
+}
+.banner__pagin
+.swiper-pagination-bullet {
+    width: 100px;
+    border-radius: 0;
+    transition: height 0.3s;
+    background: #ccc;
+    opacity: 0.8;
+}
+.banner__pagin
+.swiper-pagination-bullet-active {
+    background: $orange;
+    height: 15px;
+    opacity: 1;
+}
+
+.banner__prev {
+    color: #fff;
+    font-weight: 900;
+    left: 1%;
+    @include minVal(1300px){
+        left: 8vw;
+    }
+}
+
+.banner__next {
+    color: #fff;
+    font-weight: 900;
+    right: 1%;
+    @include minVal(1300px){
+        right: 8vw;
+    }
+}

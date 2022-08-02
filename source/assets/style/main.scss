@@ -5,9 +5,20 @@
 @import "./common/_basic";
 @import "./common/_header";
 
+
+@import "./common/swiper-navigation";
+@import "./common/swiper-pagination";
+@import "./common/swiper";
+
 @import "./common/fontello";
-// @import "./common/_header";
-// @import "./common/_header";
+@import "./home/banner";
+@import "./home/banner-slide";
+@import "./home/transport";
+@import "./home/promo";
+@import "./home/delivery";
+@import "./home/services";
+
+
 // @import "./common/_header";
 
 
