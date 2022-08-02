@@ -1,0 +1,91 @@
+.delivery {
+    position: relative;
+    width: 100%;
+    max-width: $maxWidthWindow;
+    margin: 0 auto;
+    background: $purple;
+    z-index: 0;
+
+    &:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 50%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: url(/images/delivery-cube.png) space content-box ;
+    }
+}
+.delivery__wrapper {
+    width: 100%;
+    max-width: $maxWidth;
+    margin: 0 auto;
+    padding: 30px 10px 30px 10px;
+
+    @include minLG {
+        padding: 70px 10px 70px 10px;
+    }
+}
+.delivery-title {
+    color: #fff;
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+
+    @include minLG {
+        max-width: 500px;
+    }
+}
+.delivery__form {
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+    
+}
+.delivery__form--wrap {
+    width: 100%;
+}
+.delivery-input {
+    height: 50px;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 10px;
+    padding: 5px 5px 5px 10px;
+    @include font($fontInter, 400);
+    @include font-size(1.1, 14);
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 10px $orange;
+    }
+}
+.button-delivery {
+    width: 100%;
+    max-width: none;
+    @include font-size(1.1, 14);
+    position: relative;
+    margin-bottom: 20px;
+}
+.delivery__form--name {
+}
+
+.delivery__form--tel {
+}
+.delivery__form--email {
+
+}
+.delivery__form-message {
+    height: 100px;
+    resize: none;
+}
+
+.deliver__form--caption {
+    @include font($fontInter, 400);
+    @include font-size(1, 12);
+    color: #fff;
+    text-align: center;
+}
