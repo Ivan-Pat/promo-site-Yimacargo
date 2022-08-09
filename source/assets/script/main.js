@@ -45,8 +45,84 @@ document.addEventListener('DOMContentLoaded', ()=> {
               }, 
             },
     })
-    /* END ///Slider banner*/
+    /* END ///Slider banner*/ 
 
+     /* Slider feedback */
+    const sliderFeedback = new Swiper('.feedback__slider', {
+        modules: [ Navigation, Pagination ],
+        navigation: {
+          nextEl: '.feedback-prev',
+          prevEl: '.feedback-next',
+      
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+          // bulletActiveClass: "123",
+        },
+        loop: true,
+        spaceBetween: 20,
+        slidesPerView: 1,
+        grabCursor: true,
+        // enabled: false,
+      
+          breakpoints: {
+            960: {
+
+              slidesPerView: 2,
+              spaceBetween: 20,
+
+            }, 
+            1200: {
+              slidesPerView: 3,
+              spaceBetween: 180,
+              centerInsufficientSlides: true,
+              centeredSlides: true,
+              centeredSlidesBounds: true,
+            }
+          },
+  })
+
+
+
+  /* END ///Slider feedback */
+
+  /* Slider news */
+
+  const sliderNews = new Swiper('.news__slider', {
+    modules: [ Navigation, Pagination ],
+    navigation: {
+      nextEl: '.news-prev',
+      prevEl: '.news-next',
+  
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    loop: true,
+    spaceBetween: 20,
+    slidesPerView: 1,
+    grabCursor: true,
+    // enabled: false,
+  
+      breakpoints: {
+        960: {
+
+          slidesPerView: 2,
+          spaceBetween: 20,
+
+        }, 
+        1200: {
+          slidesPerView: 3,
+          spaceBetween: 180,
+          centerInsufficientSlides: true,
+          centeredSlides: true,
+          centeredSlidesBounds: true,
+        }
+      },
+})
+  /* END ///Slider news */
 })
 
 

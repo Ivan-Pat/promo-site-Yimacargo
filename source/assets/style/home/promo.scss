@@ -5,7 +5,7 @@
     background: $background;
 
     @include minLG {
-        background: url(/images/promo-bg.png) center/cover no-repeat, $background;
+        background: url(/images/blue-bg.png) center/cover no-repeat, $background;
     }
     
 }
