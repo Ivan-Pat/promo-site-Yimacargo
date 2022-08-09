@@ -1,0 +1,119 @@
+.news-slide {
+    width: 100%;
+    height: auto;
+
+    @include minLG {
+        max-width: 262px;    
+    }
+}
+.news-slide__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    // height: 100%;
+    box-shadow: 0 0 10px rgba($color: #ccc, $alpha: 1.0);
+    background: #fff;
+    transition: transform 0.5s;
+}
+.swiper-slide-active 
+.news-slide__wrapper {
+    @include minVal(1200px) {
+        transform: scale(2);
+    }
+}
+.news-slide__img {
+    width: 100%;
+    // max-width: 262px;
+    height: 130px;
+    object-fit: cover;
+}
+.swiper-slide-active 
+.news-slide__img {
+    @include minVal(1200px) {
+        height: 110px;
+    }  
+}
+.news-slide__container {
+    width: 100%;
+    padding: 20px;
+}
+
+.swiper-slide-active 
+.news-slide__container {
+    @include minVal(1200px) {
+        padding: 5px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    } 
+}
+
+.news-slide__title {
+    font-family: $fontInter;
+    font-style: normal;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1rem;
+    max-width: 90%;
+    max-height: 2.2rem;
+
+    @include minLG {
+        text-align: start;
+    }
+}
+
+.swiper-slide-active
+.news-slide__title {
+    @include minVal(1200px) {
+        font-size: 0.5rem;
+    }
+}
+.news-slide__subtitle {
+    display: none;
+}
+
+.swiper-slide-active
+.news-slide__subtitle {
+    @include minVal(1200px) {
+        display: block;
+        font-size: 0.5rem;
+        font-family: $fontInter;
+        font-style: normal;
+        font-weight: 400;
+        opacity: 0.7;
+        margin-top: 10px;
+    }
+}
+.news-slide__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.news-slide__date {
+    display: block;
+    @include minLG {
+        display: inline-block;
+        max-width: 150px;
+        max-height: 2rem;
+        opacity: 0.3;
+    }
+}
+.swiper-slide-active
+.news-slide__date {
+    @include minVal(1200px) {
+        font-size: 0.5rem;
+    }
+}
+.news-slide__link {
+    display: none;
+}
+.swiper-slide-active
+.news-slide__link {
+    @include minVal(1200px) {
+        display: inline;
+        font-size: 0.5rem;
+        color: $orange;
+    }
+}
