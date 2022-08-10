@@ -1,3 +1,5 @@
+/*checks webp for a background-image and add class to html */
+
 function isWebp() {
 
     function testWebP(callback) {

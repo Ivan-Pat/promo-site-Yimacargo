@@ -1,8 +1,15 @@
 html {
     font-family: $fontInter;
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 body {}
 .body-fixed {
     overflow-y: hidden;
+}
+a {
+    outline-color: $orange;
+}
+button {
+    outline-color: $purple    ;
 }

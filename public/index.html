@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./script/checkWebp.js"></script>
     <link rel="stylesheet" href="./style/main.css">
+    <link rel="icon" href="./images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" href="./images/favicon/apple-touch-icon.png">
+    <link rel="icon" href="./images/favicon/favicon.svg">
     <title>Yimacaargo</title>
 </head>
 <body>
@@ -22,10 +25,10 @@
             </div>
             <div class="header__tel">
                 <div class="header__tel--item">
-                    <a href="tel:+79166717888"> <i class="icon-phone"></i> Россия <span>+7(916) 671 78 88</span></a>
+                    <a href="tel:+79166717888"> <i class="icon-phone"></i> Россия<span>+7(916) 671 78 88</span></a>
                 </div>
                 <div class="header__tel--item">
-                    <a href="tel:+79166717888"> <i class="icon-phone"></i> Китай <span>+86(189) 5795 9717</span></a>
+                    <a href="tel:+79166717888"> <i class="icon-phone"></i> Китай<span>+86(189) 5795 9717</span></a>
                 </div>
 
             </div>
@@ -46,15 +49,16 @@
                 <span class="burger__item"></span>
             </div>
             <nav class="header__nav">
+                <button class="burger-inner">&#10006</button>
                 <ul>
-                    <li><a href="#">YimoCargo</a></li>
-                    <li><a href="#">Дополнительно </a></li>
-                    <li><a href="#">Отзывы</a></li>
-                    <li><a href="#">Новости</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a class="nav-link" href="#idMain">YimoCargo </a></li>
+                    <li><a class="nav-link" href="#idDelivery">Дополнительно </a></li>
+                    <li><a class="nav-link" href="#idFeedback">Отзывы</a></li>
+                    <li><a class="nav-link" href="#idNews">Новости</a></li>
+                    <li><a class="nav-link" href="#idFooter">Контакты</a></li>
                 </ul>
             </nav>
-            <button class="button button-callback">Консультация</button>
+            <button class="button button-callback" id="buttonPopUp">Консультация</button>
         </div>
     </div>    
 </header>
@@ -63,12 +67,12 @@
     <div class="banner__wrapper swiper-wrapper">
         <div class="banner-slide swiper-slide">
     <div class="banner-slide__wrapper">
-        <h2 class="banner-slide__title">Международная компания Yimo</h2>
+        <h2 class="banner-slide__title">Международная компания Yimo </h2>
 
         <div class="banner-slide__container">
             <p class="banner-slide__item">
                 <span class="banner-slide__icon"><i class="icon-ok"></i></span>
-                Надежная 100% доставка из Китая
+                Надежная 100% доставка из Китая 
             </p>
             <p class="banner-slide__item">
                 <span class="banner-slide__icon"><i class="icon-ok"></i></span>
@@ -76,7 +80,7 @@
             </p>
             <p class="banner-slide__item">
                 <span class="banner-slide__icon"><i class="icon-ok"></i></span>
-                Логистика внутри Китая и России
+                Логистика внутри Китая и России 
             </p>
             <p class="banner-slide__item">
                 <span class="banner-slide__icon"><i class="icon-ok"></i></span>
@@ -86,20 +90,20 @@
     </div>
 
     <picture>
-        <source media="(max-width:450px)" srcset="images/ship-mobile.webp" type="image/webp">
-        <source media="(max-width:960px)" srcset="images/ship-tablet.webp" type="image/webp">
-        <source srcset="images/ship.webp" type="image/webp">
+        <source media="(max-width:450px)" srcset="images/banner-slide-ship_mobile.webp" type="image/webp">
+        <source media="(max-width:960px)" srcset="images/banner-slide-ship_tablet.webp" type="image/webp">
+        <source srcset="images/banner-slide-ship.webp" type="image/webp">
         <img class="banner-slide__img" src="images/ship.png" alt="Корабль">
     </picture>
 </div>
         <div class="banner-slide swiper-slide">
     <div class="banner-slide__wrapper">
-        <h2 class="banner-slide__title">Международная компания Yimo</h2>
+        <h2 class="banner-slide__title">Международная компания Yimo </h2>
 
         <div class="banner-slide__container">
             <p class="banner-slide__item">
                 <span class="banner-slide__icon"><i class="icon-ok"></i></span>
-                Надежная 100% доставка из Китая
+                Надежная 100% доставка из Китая 
             </p>
             <p class="banner-slide__item">
                 <span class="banner-slide__icon"><i class="icon-ok"></i></span>
@@ -107,7 +111,7 @@
             </p>
             <p class="banner-slide__item">
                 <span class="banner-slide__icon"><i class="icon-ok"></i></span>
-                Логистика внутри Китая и России
+                Логистика внутри Китая и России 
             </p>
             <p class="banner-slide__item">
                 <span class="banner-slide__icon"><i class="icon-ok"></i></span>
@@ -117,20 +121,20 @@
     </div>
 
     <picture>
-        <source media="(max-width:450px)" srcset="images/ship-mobile.webp" type="image/webp">
-        <source media="(max-width:960px)" srcset="images/ship-tablet.webp" type="image/webp">
-        <source srcset="images/ship.webp" type="image/webp">
+        <source media="(max-width:450px)" srcset="images/banner-slide-ship_mobile.webp" type="image/webp">
+        <source media="(max-width:960px)" srcset="images/banner-slide-ship_tablet.webp" type="image/webp">
+        <source srcset="images/banner-slide-ship.webp" type="image/webp">
         <img class="banner-slide__img" src="images/ship.png" alt="Корабль">
     </picture>
 </div>
         <div class="banner-slide swiper-slide">
     <div class="banner-slide__wrapper">
-        <h2 class="banner-slide__title">Международная компания Yimo</h2>
+        <h2 class="banner-slide__title">Международная компания Yimo </h2>
 
         <div class="banner-slide__container">
             <p class="banner-slide__item">
                 <span class="banner-slide__icon"><i class="icon-ok"></i></span>
-                Надежная 100% доставка из Китая
+                Надежная 100% доставка из Китая 
             </p>
             <p class="banner-slide__item">
                 <span class="banner-slide__icon"><i class="icon-ok"></i></span>
@@ -138,7 +142,7 @@
             </p>
             <p class="banner-slide__item">
                 <span class="banner-slide__icon"><i class="icon-ok"></i></span>
-                Логистика внутри Китая и России
+                Логистика внутри Китая и России 
             </p>
             <p class="banner-slide__item">
                 <span class="banner-slide__icon"><i class="icon-ok"></i></span>
@@ -148,9 +152,9 @@
     </div>
 
     <picture>
-        <source media="(max-width:450px)" srcset="images/ship-mobile.webp" type="image/webp">
-        <source media="(max-width:960px)" srcset="images/ship-tablet.webp" type="image/webp">
-        <source srcset="images/ship.webp" type="image/webp">
+        <source media="(max-width:450px)" srcset="images/banner-slide-ship_mobile.webp" type="image/webp">
+        <source media="(max-width:960px)" srcset="images/banner-slide-ship_tablet.webp" type="image/webp">
+        <source srcset="images/banner-slide-ship.webp" type="image/webp">
         <img class="banner-slide__img" src="images/ship.png" alt="Корабль">
     </picture>
 </div>
@@ -201,43 +205,44 @@
         </div>
     </div>               
 </section>
-        <section class="promo">
+        <section class="promo" id="idMain">
     <div class="promo__wrapper">
-        <h1 class="title promo-title"> Почему Yimo<span>Cargo</span></h1>
+        <h1 class="title promo-title"> Почему Yimo<span>Cargo</span> </h1>
         <div class="promo__body">
             <picture><source srcset="images/promo-girl.webp" type="image/webp"><img class="promo__img" src="images/promo-girl.png" alt="Девушка"></picture>
             <div class="promo__container">
 
                 <div class="promo__item">
                     <span><i class="icon-ok"></i></span>
-                    <h3>Оперативная доставка груза </h3>
+                    <h3>Оперативная доставка груза   </h3>
                     <p>Отделы внешней торговли в Иу и Гуанчжоу </p>
                 </div>
 
                 <div class="promo__item">
                     <span><i class="icon-ok"></i></span>
                     <h3>Безопасная перевозка</h3>
-                    <p>Весь перевозимый груз застрохован.</p>
+                    <p>Весь перевозимый груз застрохован. </p>
                 </div>
 
                 <div class="promo__item">
                     <span><i class="icon-ok"></i></span>
                     <h3>Доставка до крупных городов РФ</h3>
-                    <p>Москва, Екатеринбург, Новосибирск</p>
+                    <p>Москва, Екатеринбург, Новосибирск </p>
                 </div>
 
                 <div class="promo__item">
                     <span><i class="icon-ok"></i></span>
                     <h3>Доступная цена на услуги</h3>
-                    <p>Отделы внешней торговли в Иу и Гуанчжоу</p>
+                    <p>Отделы внешней торговли в Иу и Гуанчжоу </p>
                 </div>
             </div>
         </div>
     </div>
 </section>
-        <section class="delivery">
+        <section class="delivery" id="idDelivery">
     <div class="delivery__wrapper">
         <h2 class="title delivery-title"><span>Каким способом</span> лучше доставить ваш груз?</h2>
+        
         <form class="delivery__form" action="#">
             <input class="delivery__form--name delivery-input" type="text" name="Фамилия" id="name" placeholder="Ваше имя*">
             <div class="delivery__form--wrap">
@@ -254,12 +259,12 @@
 </section>
         <section class="services">
     <div class="services__wrapper">
-        <h2 class="title services-title">Дополнительные <span>услуги</span></h2>
+        <h2 class="title services-title">Дополнительные <span>услуги</span> </h2>
         <div class="services__body">
             <div class="services__item">
                 <img class="services__item--img" src="images/svg/services-insurence.svg" alt="logo">
-                <h3 class="services__item--title">Страхование</h3>
-                <p class="services__item--caption">Наша компания имеет отделы внешней торговли в Иу и Гуанчжоу, соответственно отвечает за получение российских клиентов</p>
+                <h3 class="services__item--title">Страхование Отправить</h3>
+                <p class="services__item--caption">Наша компания имеет отделы внешней торговли в Иу и Гуанчжоу, соответственно отвечает за получение российских клиентов </p>
             </div>
 
             <div class="services__item">
@@ -282,7 +287,7 @@
         </div>
     </div>
 </section>
-        <section class="feedback">
+        <section class="feedback" id="idFeedback">
     <div class="feedback__wrapper">
         <h2 class="title">Отзывы <span>клиентов</span></h2>
 
@@ -291,7 +296,7 @@
                 <div class="feedback-slide swiper-slide">
 
     <div class="feedback-slide__wrapper">
-        <picture><source srcset="images/feedback-user1.webp" type="image/webp"><img class="feedback-slide__img" src="images/feedback-user1.png" alt="Пользователь"></picture>
+        <img class="feedback-slide__img" src="images/svg/feedback-user1.svg" alt="Пользователь">
         <p class="feedback-slide__caption">Наша компания имеет отделы внешней торговли в Иу и Гуанчжоу, соответственно отвечает за получение российских клиентов.  Компания имеет опытные профессиональные команды, обладает сверхвысокой пропускной способностью для таможенной очистки, а также имеет офшорные склады в россии.  наш отдел занимается планированием всего спектра грузовых решений, предоставление профессиональных экспедиторских</p>
         <h3 class="feedback-slide__title">Семен П</h3>
         <span class="feedback-slide__subtitle">Менеджер "Логистик+"</span>
@@ -315,7 +320,7 @@
                 <div class="feedback-slide swiper-slide">
 
     <div class="feedback-slide__wrapper">
-        <picture><source srcset="images/feedback-user2.webp" type="image/webp"><img class="feedback-slide__img" src="images/feedback-user2.png" alt="Пользователь"></picture>
+        <img class="feedback-slide__img" src="images/svg/feedback-user2.svg" alt="Пользователь">
         <p class="feedback-slide__caption">Наша компания имеет отделы внешней торговли в Иу и Гуанчжоу, соответственно отвечает за получение российских клиентов.  Компания имеет опытные профессиональные команды, обладает сверхвысокой пропускной способностью для таможенной очистки, а также имеет офшорные склады в россии.  наш отдел занимается планированием всего спектра грузовых решений, предоставление профессиональных экспедиторских</p>
         <h3 class="feedback-slide__title">Семен П</h3>
         <span class="feedback-slide__subtitle">Менеджер "Логистик+"</span>
@@ -339,7 +344,7 @@
                 <div class="feedback-slide swiper-slide">
 
     <div class="feedback-slide__wrapper">
-        <picture><source srcset="images/feedback-user3.webp" type="image/webp"><img class="feedback-slide__img" src="images/feedback-user3.png" alt="Пользователь"></picture>
+        <img class="feedback-slide__img" src="images/svg/feedback-user3.svg" alt="Пользователь">
         <p class="feedback-slide__caption">Наша компания имеет отделы внешней торговли в Иу и Гуанчжоу, соответственно отвечает за получение российских клиентов.  Компания имеет опытные профессиональные команды, обладает сверхвысокой пропускной способностью для таможенной очистки, а также имеет офшорные склады в россии.  наш отдел занимается планированием всего спектра грузовых решений, предоставление профессиональных экспедиторских</p>
         <h3 class="feedback-slide__title">Семен П</h3>
         <span class="feedback-slide__subtitle">Менеджер "Логистик+"</span>
@@ -364,7 +369,7 @@
                 <div class="feedback-slide swiper-slide">
 
     <div class="feedback-slide__wrapper">
-        <picture><source srcset="images/feedback-user1.webp" type="image/webp"><img class="feedback-slide__img" src="images/feedback-user1.png" alt="Пользователь"></picture>
+        <img class="feedback-slide__img" src="images/svg/feedback-user1.svg" alt="Пользователь">
         <p class="feedback-slide__caption">Наша компания имеет отделы внешней торговли в Иу и Гуанчжоу, соответственно отвечает за получение российских клиентов.  Компания имеет опытные профессиональные команды, обладает сверхвысокой пропускной способностью для таможенной очистки, а также имеет офшорные склады в россии.  наш отдел занимается планированием всего спектра грузовых решений, предоставление профессиональных экспедиторских</p>
         <h3 class="feedback-slide__title">Семен П</h3>
         <span class="feedback-slide__subtitle">Менеджер "Логистик+"</span>
@@ -388,7 +393,7 @@
                 <div class="feedback-slide swiper-slide">
 
     <div class="feedback-slide__wrapper">
-        <picture><source srcset="images/feedback-user2.webp" type="image/webp"><img class="feedback-slide__img" src="images/feedback-user2.png" alt="Пользователь"></picture>
+        <img class="feedback-slide__img" src="images/svg/feedback-user2.svg" alt="Пользователь">
         <p class="feedback-slide__caption">Наша компания имеет отделы внешней торговли в Иу и Гуанчжоу, соответственно отвечает за получение российских клиентов.  Компания имеет опытные профессиональные команды, обладает сверхвысокой пропускной способностью для таможенной очистки, а также имеет офшорные склады в россии.  наш отдел занимается планированием всего спектра грузовых решений, предоставление профессиональных экспедиторских</p>
         <h3 class="feedback-slide__title">Семен П</h3>
         <span class="feedback-slide__subtitle">Менеджер "Логистик+"</span>
@@ -412,7 +417,7 @@
                 <div class="feedback-slide swiper-slide">
 
     <div class="feedback-slide__wrapper">
-        <picture><source srcset="images/feedback-user3.webp" type="image/webp"><img class="feedback-slide__img" src="images/feedback-user3.png" alt="Пользователь"></picture>
+        <img class="feedback-slide__img" src="images/svg/feedback-user3.svg" alt="Пользователь">
         <p class="feedback-slide__caption">Наша компания имеет отделы внешней торговли в Иу и Гуанчжоу, соответственно отвечает за получение российских клиентов.  Компания имеет опытные профессиональные команды, обладает сверхвысокой пропускной способностью для таможенной очистки, а также имеет офшорные склады в россии.  наш отдел занимается планированием всего спектра грузовых решений, предоставление профессиональных экспедиторских</p>
         <h3 class="feedback-slide__title">Семен П</h3>
         <span class="feedback-slide__subtitle">Менеджер "Логистик+"</span>
@@ -443,13 +448,13 @@
 </section>
 
 
-        <section class="news">
+        <section class="news" id="idNews">
     <div class="news__wrapper">
         <h2 class="title news-title">Новости</h2>
 
         <div class="news__slider swiper">
             <div class="news__slider--wrapper swiper-wrapper">
-                <div class="news-slide swiper-slide">
+                <div class="news-slide swiper-slide " >
     <div class="news-slide__wrapper">
         <picture><source srcset="images/news-train.webp" type="image/webp"><img class="news-slide__img" src="images/news-train.png" alt="train"></picture>
         <div class="news-slide__container">
@@ -462,7 +467,7 @@
         </div>
     </div>
 </div>;
-                <div class="news-slide swiper-slide">
+                <div class="news-slide swiper-slide " >
     <div class="news-slide__wrapper">
         <picture><source srcset="images/news-train.webp" type="image/webp"><img class="news-slide__img" src="images/news-train.png" alt="train"></picture>
         <div class="news-slide__container">
@@ -475,7 +480,7 @@
         </div>
     </div>
 </div>;
-                <div class="news-slide swiper-slide">
+                <div class="news-slide swiper-slide " >
     <div class="news-slide__wrapper">
         <picture><source srcset="images/news-train.webp" type="image/webp"><img class="news-slide__img" src="images/news-train.png" alt="train"></picture>
         <div class="news-slide__container">
@@ -489,7 +494,7 @@
     </div>
 </div>;
 
-                <div class="news-slide swiper-slide">
+                <div class="news-slide swiper-slide " >
     <div class="news-slide__wrapper">
         <picture><source srcset="images/news-train.webp" type="image/webp"><img class="news-slide__img" src="images/news-train.png" alt="train"></picture>
         <div class="news-slide__container">
@@ -502,7 +507,7 @@
         </div>
     </div>
 </div>;
-                <div class="news-slide swiper-slide">
+                <div class="news-slide swiper-slide " >
     <div class="news-slide__wrapper">
         <picture><source srcset="images/news-train.webp" type="image/webp"><img class="news-slide__img" src="images/news-train.png" alt="train"></picture>
         <div class="news-slide__container">
@@ -515,7 +520,7 @@
         </div>
     </div>
 </div>;
-                <div class="news-slide swiper-slide">
+                <div class="news-slide swiper-slide " >
     <div class="news-slide__wrapper">
         <picture><source srcset="images/news-train.webp" type="image/webp"><img class="news-slide__img" src="images/news-train.png" alt="train"></picture>
         <div class="news-slide__container">
@@ -537,8 +542,9 @@
         <div class="swiper-button-next news-next"></div>
     </div>
 </section>
+
     </main>
-    <footer class="footer">
+    <footer class="footer" id="idFooter">
     <div class="footer__wrapper">
         <div class="footer__upper">
             <div class="footer__contacts">
@@ -565,7 +571,7 @@
                 </div>
             </div>
             <div class="footer__address">
-                <button class="button button-footer">Консультация</button>
+                <button class="button button-footer" id="buttonPopUp">Консультация</button>
                 <address class="footer__address--wrapper">
                     <div class="footer__address--item">
                         <span>Адрес в России, Москва:</span>
@@ -582,7 +588,10 @@
                 </address>
             </div>
     
-            <div class="footer__map"></div>
+            <div class="footer__map">
+
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A27f4fa1bd6222af34f6fdb35f7fa2220f5a69be7d14b69e2c07c49f4d0b45c51&amp;source=constructor" width="555" height="350" frameborder="0"></iframe>
+            </div>
         </div>
         <div class="footer__lower">
             <span class="footer__copyright"><i class="icon-copyright"></i> Yimacaargo, 2020 - 2022 </span>
@@ -590,6 +599,47 @@
         </div>
     </div>
 </footer>
+    <div class="scroll-top">
+    <button class="scroll-top__btn">
+        &#10094
+    </button>
+</div>
+    <div class="pop-up" id="popUp" tabindex="0" >
+    <div class="pop-up__wrapper">
+        <button class="pop-up__close">&#10006</button>
+        <h2>Оставте свои контакты и наш менеджер свяжется с вами</h2>
+        <form class="pop-up__form" action="404.php" autocomplete="off" id="form">
+            <label class="pop-up__form--item"   >
+                <span>Имя*</span>
+                <input class="pop-up__input" id="popUpName" type="text" name="Имя"  autocomplete="off">
+            </label>
+            
+            <label class="pop-up__form--item"  >
+                <span>Телефон*</span>
+                <input class="pop-up__input" id="popUpTel" type='tel' name="Телефон" autocomplete="off">
+            </label>
+            
+            <label class="pop-up__form--item">
+                <span>Email</span>
+                <input class="pop-up__input" type="email" name="Email" autocomplete="off">
+            </label>
+            
+            <button class="pop-up__button" >Отправить</button >
+
+        </form>
+
+    </div>
+
+</div>
+    <div class="widget-navigation">
+    <span class="icon-link-ext widget-navigation-button" ></span>
+    <h2 class="widget-navigation__title">Все страницы</h2>
+    <ul>
+        <li><a href="index.html">Домашняя </a></li>
+        <li class="widget-link-butt" >Pop-up </li>
+        <li><a href="https://github.com/Ivan-Pat/promo-site-Yimacargo.git" target="_blank"><i class="icon-git"></i></a></li>
+    </ul>
+</div>
     <script src="./script/main.js" ></script>
 </body>
 </html>

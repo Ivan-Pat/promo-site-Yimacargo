@@ -12,24 +12,26 @@
     width: 100%;
     max-width: $maxWidth;
     margin: 0 auto;
-    padding: 10px 10px 50px 10px ;
+    padding: 30px 10px ;
 }
-.title {
-}
+
 .services-title {
-    margin-top: 30px;
-    margin-bottom: 40px;
+
 }
 .services__body {
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    padding: 20px 0 10px;
+    padding: 0px 0 10px;
+    margin: 20px auto 0;
     @include minMD {
         flex-direction: row;
         justify-content: center;
         gap: 10px;
+    }
+    @include minVal(1140px) {
+        margin: 50px auto 0;
     }
     @include minVal(1150px) {
         justify-content: space-between;
@@ -60,6 +62,7 @@
     @include font($fontInter, 500);
     @include font-size(1.1, 12);
     max-width: 80%;
+    max-height: 3rem;
     margin: 0 auto;
     text-align: center
 }
@@ -67,7 +70,7 @@
     @include font($fontInter, 400);
     @include font-size(0.8, 8);
     max-width: 80%;
-    
+    max-height: 120px;
     margin: 0 auto;
     text-align: justify;
 }

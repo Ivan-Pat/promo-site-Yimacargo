@@ -17,7 +17,7 @@
     flex-direction: column;
     width: 100%;
     padding: 20px;
-    box-shadow: 0 0 10px rgba($color: #ccc, $alpha: 1.0);
+    box-shadow: 0 0 10px rgba($color: #ccc, $alpha: 0.5);
     background: #fff;
     transition: transform 0.5s;
 }
@@ -52,7 +52,6 @@
     font-weight: 400;
     @include font-size(0.8, 10);
     line-height: 18px;
-    max-height: 90px;
     margin-bottom: 15px;
 
 }

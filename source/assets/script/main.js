@@ -3,17 +3,25 @@ import {Swiper, Navigation, Pagination} from "swiper";
 document.addEventListener('DOMContentLoaded', ()=> {
     /*nav menu burger*/
 
-    const burger = document.querySelector(".burger")
-    burger.addEventListener("click", clickBurger)
-    const navBody = document.querySelector(".header__nav") 
-    const body = document.querySelector('body')
+    const burger = document.querySelector(".burger");
+    const burgerInner = document.querySelector('.burger-inner').addEventListener('click', clickBurger)
+    burger.addEventListener("click", clickBurger);
+    const navBody = document.querySelector(".header__nav");
+    const body = document.querySelector('body');
+    const navLink = document.querySelectorAll('.nav-link');
+    
+    for(let i =0; i<navLink.length; i++) {
+      navLink[i].addEventListener('click', clickBurger)
+    }
     
     function clickBurger(e) {
-    let event = e.target
-    
-    navBody.classList.toggle('nav_active');
-    burger.classList.toggle('burger_active');
-    body.classList.toggle("body-fixed")
+      let event = e.target
+      
+      if (window.innerWidth < 960) {
+      navBody.classList.toggle('nav_active');
+      body.classList.toggle("body-fixed");
+      }
+
     }
     /* END ///nav menu burger*/
 
@@ -123,6 +131,70 @@ document.addEventListener('DOMContentLoaded', ()=> {
       },
 })
   /* END ///Slider news */
+
+   /* Button scroll top */
+
+const scrollTop = document.querySelector(".scroll-top")
+scrollTop.addEventListener("click", clickScrollTop)
+
+function clickScrollTop(){
+  window.scrollTo({
+    top,
+    behavior: "smooth"
+  })
+}
+window.addEventListener("scroll", windowScroll)
+
+function windowScroll(){
+
+  if (window.pageYOffset > 800 && !scrollTop.classList.contains("scroll-top_active")) {
+    
+    scrollTop.classList.toggle("scroll-top_active")
+  } else if (window.pageYOffset < 800 && scrollTop.classList.contains("scroll-top_active")) {
+    scrollTop.classList.toggle("scroll-top_active")
+  }
+}
+
+ /* END ///Button scroll top */
+
+  /* Pop up */
+  const buttonPopUp = document.querySelectorAll('#buttonPopUp');
+  
+    for (let i=0; i < buttonPopUp.length; i++) {
+      buttonPopUp[i].addEventListener("click", clickPopUp);
+}
+// const widgetLinkBut = document.querySelector(".widget-link-butt").addEventListener("click", clickPopUp)
+const popUp = document.querySelector("#popUp");
+const widgetLinkBut = document.querySelector(".widget-link-butt").addEventListener("click", clickPopUp);
+const popUpBtnClose = document.querySelector(".pop-up__close");
+popUpBtnClose.addEventListener("click", clickPopUp);
+
+function clickPopUp() {
+  popUp.classList.toggle("pop-up_acive");
+  body.classList.toggle("body-fixed");
+
+  popUp.focus();
+  let popUpBtnSend = document.querySelector('.pop-up__button');
+  popUpBtnSend.onblur = ()=> {
+    popUpBtnClose.focus()
+  }
+
+}
+   /* END ///Pop up */
+
+
+   /*    wiget-nav*/
+const wigetNav = document.querySelector(".widget-navigation");
+const widgetNavButton = document.querySelector(".widget-navigation-button")
+widgetNavButton.addEventListener("click", clickWidget)
+
+function clickWidget() {
+  wigetNav.classList.toggle("widget-navigation_active");
+  widgetNavButton.classList.toggle("widget-but_active")
+}
+
+
+/* END   wiget-nav*/
 })
 
 

@@ -11,7 +11,7 @@
     flex-direction: column;
     width: 100%;
     // height: 100%;
-    box-shadow: 0 0 10px rgba($color: #ccc, $alpha: 1.0);
+    box-shadow: 0 0 10px rgba($color: #ccc, $alpha: 0.5);
     background: #fff;
     transition: transform 0.5s;
 }
@@ -71,6 +71,7 @@
 }
 .news-slide__subtitle {
     display: none;
+    max-height: 50px;
 }
 
 .swiper-slide-active

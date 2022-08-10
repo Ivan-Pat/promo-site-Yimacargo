@@ -13,7 +13,7 @@
     width: 100%;
     max-width: $maxWidth;
     margin: 0 auto;
-    padding: 10px;
+    padding: 30px 10px;
 
     @include minVal(1140px) {
         padding: 0 10px 20px 10px;
@@ -33,7 +33,7 @@
     }
 }
 .promo-title {
-    margin-bottom: 60px;
+    
 }
 .promo__body {
     width: 100%;
@@ -44,13 +44,16 @@
     justify-content: center;
     background: #fff;
     box-shadow: 0 0 15px rgba($color: #ccc, $alpha: 1.0);
-    margin: 0 auto;
+    margin: 20px auto 0;
 
     @include minLG {
         max-width: 946px;
         flex-direction: row;
         justify-content: space-between;
         
+    }
+    @include minVal(1140px) {
+        margin: 50px auto 0;
     }
 }
 .promo__img {

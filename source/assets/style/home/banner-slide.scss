@@ -65,6 +65,7 @@
     @include minMD {
         display: block;
         position: relative;
+        max-height: 60px;
         color: #fff;
         margin-bottom: 15px;
         @include font($fontInter, 500);
