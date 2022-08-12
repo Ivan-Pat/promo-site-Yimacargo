@@ -29,8 +29,6 @@ npm run zip
     - promo-element.png
 ```
 ##### Библиотеки и плагины 
-```
-   Слайдер swiper - https://swiperjs.com
-```
+[Слайдер swiper](https://swiperjs.com)
 
 
