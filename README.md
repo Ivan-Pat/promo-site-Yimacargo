@@ -31,7 +31,6 @@ npm run zip
 ##### Библиотеки и плагины 
 ```
    Слайдер swiper - https://swiperjs.com
-   Иконочный шрифт fontello - https://fontello.com
 ```
 
 
